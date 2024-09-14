@@ -14,8 +14,11 @@ for flag, 0 reads it in grayscale
 
 import cv2
 
-image = cv2.imread("minion.jpg", 0)
-image2 = cv2.imread("minion.jpg", cv2.IMREAD_COLOR)
+minion = "C:\\Users\\dylan\\f1Tenth\\f1tenth\\open_cv_practice\\images\\minion.jpg"
+
+
+image = cv2.imread(minion, 0)
+image2 = cv2.imread(minion, cv2.IMREAD_COLOR)
 
 cv2.imshow("window name", image)
 cv2.imshow("window name 2", image2)
