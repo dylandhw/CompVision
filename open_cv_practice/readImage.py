@@ -8,15 +8,17 @@ screen.
 4. delete image window from the memory after displaying using destroyAllWindows() 
 function.
 
+for flag, 0 reads it in grayscale
 '''
 
 
 import cv2
 
-image = cv2.imread("minion.jpg", cv2.IMREAD_COLOR)
-
+image = cv2.imread("minion.jpg", 0)
+image2 = cv2.imread("minion.jpg", cv2.IMREAD_COLOR)
 
 cv2.imshow("window name", image)
+cv2.imshow("window name 2", image2)
 
 
 cv2.waitKey(0)
